@@ -41,33 +41,4 @@ $tw.wiki.bundleHandler.someHandler = function(event) {
 };
 */
 
-/*
-// An example bundle function
-$tw.wiki.bundleFunction.someBundleFunction = function(event, status_message) {
-  const status = status_message || '';
-  const separator = event.data.separator ? event.data.separator : '<!-- TIDDLER SEPARATOR --!>';
-  const bundleFilter = event.data.filter ? event.data.filter : '[is[system]!is[system]]';
-  const bundleTitle = "The title you want";
-  const bundleText = 'some bundle text containing the requested information or tiddlers'
-  const tiddlerList = "A tiddler list"
-  const Bundle = {
-    title: bundleTitle,
-    text: bundleText,
-    list: tiddlerList,
-    tags: '[[Some Bundle Type]]',
-    separator: separator,
-    type: 'text/plain',
-    status: status,
-    bundle_size: tiddlerList.length
-  };
-  const messageObject = {
-    verb:"DELIVER_BUNDLE",
-    bundle: Bundle,
-    origin: event.data.destination,
-    type: 'Some Bundle Type'
-  };
-  event.source.postMessage(messageObject,"*");
-};
-*/
-
 })();
